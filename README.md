@@ -16,7 +16,7 @@ Mecha files:
 
 ```
 {"mechas": {
-  # each key is the unique id for the mecha in question
+  # each key is the unique id for the mecha in question, this allows overrides via mods
   "gundam": {
     "name": "Gundam",
     "parts": [
