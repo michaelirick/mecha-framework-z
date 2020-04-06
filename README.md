@@ -1,7 +1,7 @@
 
 # Resources
 
-In order to provide easy to edit and modify parts and mecha, we'll be implementing a flatfile json format
+In order to provide easy to edit and modify parts and mecha, we'll be implementing a flatfile json format. This will also let us leverage DOTS for great performance.
 
 File structure:
 
@@ -24,7 +24,8 @@ Mecha files:
       {
         "key": "gundam_head",
         "modules": [
-          {"key": "60mm_head_vulcans"},
+          {"key": "60mm_head_vulcan", "mount": "head_vulcan_mount_left"},
+          {"key": "60mm_head_vulcan", "mount": "head_vulcan_mount_right"},
           {"key": "double_eye_sensors"},
           {"key": "gundanium_armor"}
         ]
@@ -48,6 +49,18 @@ Part files:
           "translate": [0, 0, 0], // default
           "rotate": [0, 0, 0], // default
           "scale": [0, 0, 0] //default
+          "mounts": {
+            "head_vulcan_mount_left": {
+              "translate": [2, 0, 0],
+              "rotate": [0, 0, 0],
+              "scale": [0, 0, 0]
+            },
+            "head_vulcan_mount_right": {
+              "translate": [-2, 0, 0],
+              "rotate": [0, 0, 0],
+              "scale": [0, 0, 0]
+            }            
+          }
         }
       ]
     }
