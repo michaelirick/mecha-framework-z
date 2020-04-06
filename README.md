@@ -14,7 +14,7 @@ resources/
 
 Mecha files:
 
-```
+```json
 {"mechas": {
   # each key is the unique id for the mecha in question, this allows overrides via mods
   "gundam": {
@@ -31,4 +31,13 @@ Mecha files:
     ]
   }
 }}
+```
+
+Part files:
+
+```json
+{
+  "parts": {
+  }
+}
 ```
