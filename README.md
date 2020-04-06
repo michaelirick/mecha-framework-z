@@ -16,9 +16,10 @@ Mecha files:
 
 ```json
 {"mechas": {
-  # each key is the unique id for the mecha in question, this allows overrides via mods
+  // each key is the unique id for the mecha in question, this allows overrides via mods
   "gundam": {
     "name": "Gundam",
+    "skeleton": "humanoid"
     "parts": [
       {
         "key": "gundam_head",
@@ -38,6 +39,18 @@ Part files:
 ```json
 {
   "parts": {
+    "gundam_head": {
+      "name": "Gundam Head",
+      "meshes": [
+        {
+          "file": "head.fbx",
+          "bone:": "head",
+          "translate": [0, 0, 0], // default
+          "rotate": [0, 0, 0], // default
+          "scale": [0, 0, 0] //default
+        }
+      ]
+    }
   }
 }
 ```
